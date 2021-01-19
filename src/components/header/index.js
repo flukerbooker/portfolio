@@ -1,10 +1,13 @@
 import React from 'react';
-import { Link as ReactRouterLink } from 'react-router-dom';
-import { NavBar, Container, NavItem, NavLink } from './styles/header';
+import { NavBar, Container, NavItem, NavLink, Logo } from './styles/header';
 
 export default function Header({children, ...restProps}){
     return <Container {...restProps}>{children}</Container>
 };
+
+Header.Logo = function HeaderLogo({children, ...restProps}){
+    return <Logo {...restProps}>{children}</Logo>
+}
 
 Header.NavBar = function HeaderNavBar({children, ...restProps}){
     return <NavBar {...restProps}>{children}</NavBar>
