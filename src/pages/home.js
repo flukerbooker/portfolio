@@ -1,9 +1,9 @@
 import React from 'react';
+import { HeaderContainer } from '../containers/header';
 
-function Home() {
+
+export default function Home() {
     return <>
-        <div>Test</div>
+        <HeaderContainer />
     </>
 };
-
-export default Home;
