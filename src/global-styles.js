@@ -14,10 +14,11 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: 'Roboto', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         color: black;
         box-sizing: border-box;
+        background: linear-gradient(#ade8f4, #9198e5);
     }
 `
