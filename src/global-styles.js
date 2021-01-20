@@ -11,6 +11,7 @@ export const GlobalStyles = createGlobalStyle`
 
     html{
         font-size: 62.5%;
+        box-sizing: border-box !important;
     }
 
     body {
@@ -18,7 +19,8 @@ export const GlobalStyles = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         color: black;
-        box-sizing: border-box;
         background: linear-gradient(#ade8f4, #9198e5);
+        height: 100vh;
+        background-repeat: no-repeat;
     }
 `

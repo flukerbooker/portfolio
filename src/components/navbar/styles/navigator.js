@@ -1,33 +1,31 @@
 import styled from "styled-components";
 
-export const Container = styled.header`
-  height: 100vh;
-  max-width: 114rem;
-  background-size: cover;
-  margin: 0 auto;
-`;
-
-export const Logo = styled.h2`
+export const NavContainer = styled.div`
   display: flex;
-  justify-self: flex-start; 
-  font-size: 3.5rem;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 114rem;
+  padding: 1.5rem 0;
+  margin: 0 auto;
 `;
 
 export const NavBar = styled.nav`
   color: #014f86;
-  display: flex;
-  padding: 4rem 5rem;
+  padding: 2rem 0rem;
+  
 `;
+
+export const Logo = styled.img`
+  width: 12rem;
+  height: 12rem;
+`;
+
 export const NavLink = styled.ul`
-  color: white;
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: flex-end;
   list-style: none;
 `;
 
 export const NavItem = styled.li`
+  display: inline-block;
   color: #014f86;
   font-size: 2rem;
   font-weight: 500;

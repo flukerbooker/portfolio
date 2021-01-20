@@ -1,18 +1,19 @@
 import React from "react";
-import { Header } from "../components/";
+import { Navigator } from "../components/";
+import LogoSrc from "../assets/icon.png";
 
 export function HeaderContainer() {
   return (
-    <Header>
-      <Header.NavBar>
-        <Header.Logo>FRK</Header.Logo>
-        <Header.NavLink>
-          <Header.NavItem href="#">Home</Header.NavItem>
-          <Header.NavItem href="#">About</Header.NavItem>
-          <Header.NavItem href="#">Project</Header.NavItem>
-          <Header.NavItem href="#">Contact</Header.NavItem>
-        </Header.NavLink>
-      </Header.NavBar>
-    </Header>
+    <Navigator>
+      <Navigator.Logo src={LogoSrc} />
+      <Navigator.NavBar>
+        <Navigator.NavLink>
+          <Navigator.NavItem href="#">Home</Navigator.NavItem>
+          <Navigator.NavItem href="#">About</Navigator.NavItem>
+          <Navigator.NavItem href="#">Project</Navigator.NavItem>
+          <Navigator.NavItem href="#">Contact</Navigator.NavItem>
+        </Navigator.NavLink>
+      </Navigator.NavBar>
+    </Navigator>
   );
 }
